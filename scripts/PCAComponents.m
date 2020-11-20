@@ -16,7 +16,7 @@ function [dim] = PCAComponents(sequence,dist_thr,nc)
         AM=(D <= dist_thr) - eye(size(D,1),size(D,2));
 
 
-        Array_of_Sequences=nuc2num(sequence);
+        Array_of_Sequences=nuc2numBin(sequence);
 
         InitialData=double(Array_of_Sequences);
 

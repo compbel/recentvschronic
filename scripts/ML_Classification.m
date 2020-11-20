@@ -29,11 +29,13 @@ for i=1:100
     PredictionAcc=zeros(1,10);
     for j=1:10
         j;
+        
+        % Uncomment ML Model to use it
 
         % ---------------------------- SVM Model ------------------------------------ %
         % --> Linear Kernel
 %         Mdl=crossval(SVM_Model(TrainData, TrainLabels, 'linear', []), 'KFold',10);
-%         % --> polynomial Kernal
+        % --> polynomial Kernal
 %         Mdl=crossval(SVM_Model(TrainData, TrainLabels,'polynomial', 2), 'KFold',10);
 %         
 %         oosLoss=kfoldLoss(Mdl);
