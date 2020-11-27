@@ -43,7 +43,7 @@ function [dim] = PCAComponents(sequence,dist_thr,nc)
         
         eigValNormalized = eigVal/sum(eigVal,1);
         cs=cumsum(flip(eigValNormalized));
-        dim=find(cs >= varFrac,1,'first')/nc;
+        dim=find(cs >= varFrac,1,'first')/length(eigVal);
 
 end
 
